@@ -3,4 +3,6 @@
     <string name="title_activity_you_tube">YouTube Player</string>
     <string name="title_activity_maps">Map</string>
     <string name="title_activity_standalone">StandaloneActivity</string>
+    <string name="play_video">Play Video</string>
+    <string name="play_playlist">Play Playlist</string>
 </resources>
