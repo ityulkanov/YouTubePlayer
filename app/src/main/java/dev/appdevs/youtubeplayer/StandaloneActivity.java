@@ -16,7 +16,7 @@ public class StandaloneActivity extends AppCompatActivity implements View.OnClic
 
     private String GOOGLE_API_KEY = "1009522858392-sluc7m8q04016oc3ji05nhtinl9suivs.apps.googleusercontent.com";
     private String YOUTUBE_VIDEO_ID = "L05qFblcTIk";
-    private String YOUTBE_PLAYLIST = "PLrEnWoR732-ALHolmlvCuhIfuSbRhdWpy";
+    private String YOUTUBE_PLAYLIST = "PLrEnWoR732-ALHolmlvCuhIfuSbRhdWpy";
     private Button btnPlayVideo;
     private Button btnPlayList;
 
@@ -25,10 +25,10 @@ public class StandaloneActivity extends AppCompatActivity implements View.OnClic
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_standalone);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        btnPlayVideo = (Button) findViewById(R.id.btnPlayVideo);
-        btnPlayList = (Button) findViewById(R.id.btnPlayList);
+        btnPlayVideo = findViewById(R.id.btnPlayVideo);
+        btnPlayList = findViewById(R.id.btnPlayList);
         btnPlayVideo.setOnClickListener(this);
         btnPlayList.setOnClickListener(this);
     }
@@ -41,7 +41,7 @@ public class StandaloneActivity extends AppCompatActivity implements View.OnClic
                 intent = YouTubeStandalonePlayer.createVideoIntent(this, GOOGLE_API_KEY, YOUTUBE_VIDEO_ID);
                 break;
             case R.id.btnPlayList:
-                intent = YouTubeStandalonePlayer.createPlaylistIntent(this, GOOGLE_API_KEY, YOUTBE_PLAYLIST);
+                intent = YouTubeStandalonePlayer.createPlaylistIntent(this, GOOGLE_API_KEY, YOUTUBE_PLAYLIST);
                 break;
             default:
 
