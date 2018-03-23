@@ -26,6 +26,7 @@ public class StandaloneActivity extends AppCompatActivity implements View.OnClic
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_standalone);
         Toolbar toolbar = findViewById(R.id.toolbar);
+
         setSupportActionBar(toolbar);
         btnPlayVideo = findViewById(R.id.btnPlayVideo);
         btnPlayList = findViewById(R.id.btnPlayList);
